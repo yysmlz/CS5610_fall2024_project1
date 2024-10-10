@@ -1,0 +1,92 @@
+.interests-section {
+    padding: 3.75rem 2.5rem 3.125rem;
+    text-align: center;
+}
+
+.interests-section h2 {
+    font-size: 3.75rem;
+    margin-bottom: 2.5rem;
+    color: #333;
+    font-family: 'Merriweather', serif;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+    max-width: 75rem;
+    margin: 0 auto;
+}
+
+.card-1 {
+    background-color: #edf4ff;
+    padding: 2.5rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card-2 {
+    background-color: #dceeff;
+    padding: 2.5rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card-3 {
+    background-color: #c0e0ff;
+    padding: 2.5rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 5rem;
+    height: 5rem;
+    margin-bottom: 1.25rem;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    color: #007BFF;
+    margin-bottom: 0.625rem;
+    font-family: 'Merriweather', serif;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1.25rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.card .highlight {
+    color: #8A2BE2;
+    font-weight: bold;
+    margin-bottom: 0.625rem;
+    font-family: 'Merriweather', serif;
+}
+
+.watermark {
+    font-size: 18.75rem;
+    top: 35%;
+    left: 50%;
+    opacity: 0.1;
+    color: #007BFF;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+@media (max-width: 768px) {
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+}
+

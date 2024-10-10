@@ -1,11 +1,73 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <link href="home.css"   rel="stylesheet" />
-    </head>
-    <body>
-        <h1>
-            Welcome to Yue's Website :/
-        </h1>
-    </body>    
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Yue Yu's Personal Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+   <header>
+       <input type="checkbox" id="menu-toggle" class="menu-toggle">
+       <label for="menu-toggle" class="hamburger-menu">
+           <div></div>
+           <div></div>
+           <div></div>
+       </label>
+
+       <nav>
+           <ul>
+               <li class="name-title">Yue Yu</li>
+               <li><a href="index.html" class="active"><i class="fas fa-home"></i> Home</a></li>
+               <li><a href="projects/index.html"><i class="fas fa-briefcase"></i> Projects</a></li>
+               <li><a href="contact/index.html"><i class="fas fa-envelope"></i> Contact</a></li>
+               <li><a href="interests/index.html"><i class="fas fa-heart"></i> Interests</a></li>
+           </ul>
+       </nav>
+   </header>
+
+   <main>
+       <section class="grid-layout">
+           <div class="left-side">
+               <img src="my-photo.jpg" alt="Your Name">
+               <h1>Yue Yu</h1>
+               <h2>Software Development Engineer</h2>
+               <p><span>Northeastern University Student, Seattle, United States</span></p>
+           </div>
+
+           <div class="right-side">
+               <div class="about">
+                   <h3>About me</h3>
+                   <p>I am Yue(Luna) Yu, a woman in tech! With a passion and interest in computers, I switched from the finance industry to the technology industry in 2022. I have a strong passion for back-end software engineering and cloud technology, specializing in the development of Java web and desktop applications, as well as microservices architecture.</p>
+                   <p>In the summer of 2024, I had a 4-month SDE internship. During my internship, I gained extensive knowledge about cloud technologies. This project experience helped me build expertise in AWS cloud services, serverless architectures, and DevOps practices, showcasing my ability to develop scalable, resilient, and highly available systems.</p>
+                   <p>I am very grateful for what I have learned and earned through my postgraduate study at NEU and my internship at ByteDance, which laid a solid foundation for my future software development engineering career. As I will graduate in September 2026, I am actively seeking full-time SDE job opportunities! Feel free to contact me if you think I would be a good match for your positions!</p>
+               </div>
+
+               <div class="experience-education">
+                   <div class="experience">
+                       <h3>Experience</h3>
+                       <ul>
+                           <li>Software Development Engineer - XXXXX Company <span class="date">(May 2024 - Aug 2024)</span></li>
+                           <li>Consulting Analyst - XXXXX Company <span class="date">(Oct 2021 - Jan 2022)</span></li>
+                       </ul>
+                   </div>
+
+                   <div class="education">
+                       <h3>Education</h3>
+                       <p>Master in Computer Science, Sep 2023 - Sep 2026<br>Northeastern University</p>
+                   </div>
+               </div>
+           </div>
+       </section>
+   </main>
+
+    <div class="watermark">
+       <i class="fas fa-code"></i>
+    </div>
+
+</body>
 </html>

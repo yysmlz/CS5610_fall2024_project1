@@ -1,0 +1,128 @@
+main {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 7.5rem 2.5rem;
+}
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 2.5rem;
+    flex-grow: 1;
+    align-items: center;
+}
+
+.left-side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-side img {
+    width: 15rem;
+    height: 13.75rem;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.left-side img:hover {
+    transform: scale(1.1);
+}
+
+.left-side h1 {
+    margin: 0.625rem 0;
+    font-size: 2.25rem;
+    font-weight: bold;
+}
+
+.left-side h2 {
+    margin: 0.3125rem 0;
+    font-size: 1.125rem;
+    color: #888;
+}
+
+.left-side p {
+    font-size: 1rem;
+    color: #888;
+    margin: 0.3125rem 0;
+}
+
+.left-side p span {
+    color: #007BFF;
+    font-weight: bold;
+}
+
+.right-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 0;
+}
+
+.about {
+    margin-bottom: 2.5rem;
+}
+
+.about h3 {
+    font-size: 1.75rem;
+    margin-bottom: 1.25rem;
+    font-weight: bold;
+}
+
+.about p {
+    font-size: 1.125rem;
+    line-height: 1.8;
+}
+
+.experience-education {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+    margin-top: 2.5rem;
+}
+
+.experience, .education {
+    display: flex;
+    flex-direction: column;
+}
+
+.experience h3, .education h3 {
+    font-size: 1.375rem;
+    margin-bottom: 0.625rem;
+    font-weight: bold;
+}
+
+h1, h3 {
+    font-family: 'Merriweather', serif;
+    font-weight: 1000;
+    color: #007BFF;
+}
+
+.experience ul, .education p {
+    font-size: 1.125rem;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.experience ul li {
+    margin-bottom: 0.5rem;
+}
+
+.date::before {
+    content: '\A';
+    white-space: pre;
+}
+
+@media (max-width: 768px) {
+    .grid-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .experience-education {
+        grid-template-columns: 1fr;
+    }
+}

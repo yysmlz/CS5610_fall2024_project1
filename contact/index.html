@@ -1,11 +1,72 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <link href="home.css"   rel="stylesheet" />
-    </head>
-    <body>
-        <h1>
-            You can email me at yysmlz@163.com 
-        </h1>
-    </body>    
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact</title>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <header>
+       <input type="checkbox" id="menu-toggle" class="menu-toggle">
+       <label for="menu-toggle" class="hamburger-menu">
+           <div></div>
+           <div></div>
+           <div></div>
+       </label>
+        <nav>
+            <ul>
+		<li class="name-title">Yue Yu</li>
+                <li><a href="../index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="../projects/index.html"><i class="fas fa-briefcase"></i> Projects</a></li>
+                <li><a href="#" class="active"><i class="fas fa-envelope"></i> Contact</a></li>
+                <li><a href="../interests/index.html"><i class="fas fa-heart"></i> Interests</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="watermark">
+        <i class="fas fa-code"></i>
+    </div>
+
+    <section class="contact-header">
+        <h1>Contact.</h1>
+        <p>Get in touch with me via social media or email.</p>
+
+        <div class="social-icons">
+            <a href="#">
+                <i class="fab fa-linkedin fa-2x" style="color: #0077b5;"></i>
+                <span>LinkedIn</span>
+            </a>
+            <a href="#">
+                 <i class="fab fa-github fa-2x" style="color: #333;"></i>
+                <span>GitHub</span>
+            </a>
+
+            <div class="line-break"></div>
+
+            <a href="#">
+                <i class="fab fa-twitter fa-2x" style="color: #1DA1F2;"></i>
+                <span>Twitter</span>
+            </a>
+            <a href="#">
+                <i class="fab fa-facebook fa-2x" style="color: #1877f2;"></i>
+                <span>Facebook</span>
+            </a>
+        </div>
+    </section>
+
+    <section class="contact-form">
+        <form action="#" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+            <button type="submit">Send message to <span>yueyujoy2026@gmail.com</span></button>
+        </form>
+    </section>
+</body>
 </html>
